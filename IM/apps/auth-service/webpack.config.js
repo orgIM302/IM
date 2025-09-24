@@ -1,4 +1,5 @@
 const { NxAppWebpackPlugin } = require('@nx/webpack/app-plugin');
+const path = require('path');
 const { join } = require('path');
 
 module.exports = {
@@ -7,7 +8,7 @@ module.exports = {
   },
   resolve:{
     alias:{
-      "@packages": this.resolve(__dirname, "../../packages"),
+      "@packages": path.resolve(__dirname, "../../packages"),
     },
     extensions: [".ts", ".js"],
   },
