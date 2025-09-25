@@ -22,17 +22,17 @@
               "type": "object",
               "properties": {
                 "name": {
-                  "example": "Infinite"
+                  "example": "Infinite_Market302"
                 },
                 "email":{
                   "example":"infinitemarket30@gmail.com"
                 },
                 "password":{
-                  "example": "password"
+                  "example": "12345678"
                 }
                 }
-              }
-            }
+                }
+          }
         ],
         "responses": {
           "200": {
