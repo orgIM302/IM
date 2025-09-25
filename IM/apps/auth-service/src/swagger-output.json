@@ -11,7 +11,7 @@
     "http"
   ],
   "paths": {
-    "/user-registration": {
+    "/api/user-registration": {
       "post": {
         "description": "",
         "parameters": [
@@ -23,6 +23,12 @@
               "properties": {
                 "name": {
                   "example": "Infinite"
+                },
+                "email":{
+                  "example":"infinitemarket30@gmail.com"
+                },
+                "password":{
+                  "example": "password"
                 }
                 }
               }
