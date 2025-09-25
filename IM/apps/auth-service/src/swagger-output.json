@@ -11,7 +11,7 @@
     "http"
   ],
   "paths": {
-    "/api/user-registration": {
+    "/user-registration": {
       "post": {
         "description": "",
         "parameters": [
@@ -22,21 +22,51 @@
               "type": "object",
               "properties": {
                 "name": {
-                  "example": "Infinite_Market302"
+                  "example": "any"
                 },
-                "email":{
-                  "example":"infinitemarket30@gmail.com"
-                },
-                "password":{
-                  "example": "12345678"
+                "email": {
+                  "example": "any"
                 }
-                }
-                }
-                }
+              }
+            }
+          }
         ],
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/verify-user": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "example": "any"
+                },
+                "otp": {
+                  "example": "any"
+                },
+                "password": {
+                  "example": "any"
+                },
+                "name": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
           }
         }
       }
