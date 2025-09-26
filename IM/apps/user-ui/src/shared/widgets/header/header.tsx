@@ -42,13 +42,13 @@ const Header = () => {
                 <div className="flex items-center gap-5">
         <Link href={"/wishlist"} className="relative">
          <HeartIcon />
-         <div className="w-6 h-6 border-2 border-white bg-red-500 rounded-full flex items-center justify-center absolute top-[10px] right-[10px]">
+         <div className="w-6 h-6 border-2 border-white bg-red-500 rounded-full flex items-center justify-center absolute top-[-10px] right-[-10px]">
            <span className="text-white font-medium text-sm">0</span>
          </div>
         </Link>
          <Link href={"/cart"} className="relative">
          <CartIcon />
-         <div className="w-6 h-6 border-2 border-white bg-red-500 rounded-full flex items-center justify-center absolute top-[10px] right-[10px]">
+         <div className="w-6 h-6 border-2 border-white bg-red-500 rounded-full flex items-center justify-center absolute top-[-10px] right-[-10px]">
            <span className="text-white font-medium text-sm">0</span>
          </div>
         </Link>                        

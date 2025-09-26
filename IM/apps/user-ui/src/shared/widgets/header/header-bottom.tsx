@@ -1,5 +1,7 @@
 'use client';
+import { navItems } from "apps/user-ui/src/configs/constants";
 import { AlignLeft, ChevronDown } from "lucide-react";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const HeaderBottom = () => {
@@ -9,7 +11,7 @@ const HeaderBottom = () => {
       // Track scroll position
       useEffect(() =>{
         const handleScroll = () => {
-            if(window.screenY > 100){
+            if(window.scrollY > 100){
                 setIsSticky(true);
             }else {
                 setIsSticky(false);
@@ -48,7 +50,18 @@ const HeaderBottom = () => {
 
             {/* Navigation Links*/}
             <div className="flex items-center">
-                
+                {navItems.map((i:NavItemsTypes,index:number) => (
+                    <Link className="px-5 font-medium text-lg"
+                     href={i.href}
+                     key={index}
+                    >
+                     {i.title}
+
+                    </Link>
+                ))}
+            </div>
+            <div>
+                {isSticky}
             </div>
         </div>
       </div>  

@@ -10,13 +10,21 @@ const ProfileIcon = (props:any) => (
    stroke-width="2" 
    stroke-linecap="round" 
    stroke-linejoin="round" 
-   className="lucide lucide-user-round-icon lucide-user-round">
- <circle 
+   className="lucide lucide-circle-user-round-icon lucide-circle-user-round">
+<path 
+   d="M18 20a6 6 0 0 0-12 0"
+   />
+<circle 
    cx="12" 
-   cy="8" 
-   r="5"/>
- <path 
-  d="M20 21a8 8 0 0 0-16 0"/>
+   cy="10" 
+   r="4"
+/>
+<circle 
+   cx="12" 
+   cy="12" 
+   r="10"
+   />
 </svg>
 );
+
 export default ProfileIcon;
