@@ -1,6 +1,6 @@
 import * as React from "react";
 const ProfileIcon = (props:any) => (
- <svg 
+<svg 
    xmlns="http://www.w3.org/2000/svg" 
    width="24" 
    height="24" 
@@ -10,7 +10,7 @@ const ProfileIcon = (props:any) => (
    stroke-width="2" 
    stroke-linecap="round" 
    stroke-linejoin="round" 
-   className="lucide lucide-circle-user-round-icon lucide-circle-user-round">
+   >
 <path 
    d="M18 20a6 6 0 0 0-12 0"
    />
@@ -27,4 +27,4 @@ const ProfileIcon = (props:any) => (
 </svg>
 );
 
-export default ProfileIcon;
+export default ProfileIcon
