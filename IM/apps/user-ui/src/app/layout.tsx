@@ -1,6 +1,7 @@
 import Header from '../shared/widgets/header';
 import {Poppins,Roboto} from "next/font/google";
 import "./global.css";
+import Providers from './providers';
 
 export const metadata = {
   title: 'Infinite_Market',
@@ -27,8 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} ${poppins.variable}`}>
+        <Providers>
         <Header />
         {children}
+        </Providers>
       </body>
     </html>
   );
