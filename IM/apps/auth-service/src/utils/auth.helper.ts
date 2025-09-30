@@ -90,7 +90,7 @@ export const handleForgotPassword = async( req:Request,res:Response,next:NextFun
         await trackOtpRequests(email,next);
 
         //Generate OTP
-        await sendOtp(email,user.name, "forgot-password-user-mail");
+        await sendOtp(user.name,email, "forgot-password-user-mail");
 
         res
         .status(200)
